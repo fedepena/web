@@ -96,12 +96,12 @@ p
     float: left;
 }
 
-h1 {
+.center {
   text-align: center;
 }
 
 
-h1, h2
+h2
 {
     font-family: 'Cabin', Georgia, sans-serif;
     font-size: 18px;
