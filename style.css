@@ -24,16 +24,6 @@ nav
 .fila-h1-error, .fila-h1-404 {
     font-family: 'AG Stencil';
 }
-.fila-h1-error {
-    text-shadow: 0.5px 0.5px 1px gray;
-    color: #336799;
-    font-size: 150px;
-}
-.fila-h1-404 {
-    text-shadow: 0.5px 0.5px 1px gray;
-    color: #CA3338;
-    font-size: 200px;
-}
 
 hr
 {
