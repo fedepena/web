@@ -12,17 +12,11 @@ nav
     height: 80px;
 }
 
-.fila-h1-principal
+h1
 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     line-height: 1.1;
     margin-top: 20px;
-}
-
-
-@import url('fonts/AG-Stencil.ttf');
-.fila-h1-error, .fila-h1-404 {
-    font-family: 'AG Stencil';
 }
 
 hr
@@ -31,3 +25,4 @@ hr
     border-width: 2px;
     border-color: #16a085;
 }
+
