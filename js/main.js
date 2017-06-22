@@ -403,7 +403,10 @@
 
     function _response(data) {
       try {
-        var response = $.parseJSON(data);
+        var response = data;
+        if (!$.isPlainObject(response)) {
+          response = $.parseJSON(data);
+        }
         if (!$.isPlainObject(response)) {
           throw 'Invalid data';
         }
