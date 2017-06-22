@@ -26,3 +26,21 @@ hr
     border-color: #16a085;
 }
 
+.div-error,.div-404
+{
+    font-family: 'AG Stencil';
+    text-shadow: 0.5px 0.5px 1px gray;
+}
+
+.div-error
+{
+    color: #336799;
+    font-size: 150px;
+}
+
+.div-404
+{
+    margin-top: -30px;
+    color: #CA3338;
+    font-size: 200px;
+}
