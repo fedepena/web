@@ -31,15 +31,6 @@ if(trim($name) == '') {
 	exit();
 }
 
-if(trim($comments) == '') {
-	echo '<div class="error_message">Please enter your message</div>';
-	exit();
-}
-
-if(get_magic_quotes_gpc()) {
-	$comments = stripslashes($comments);
-}
-
 
 // Configuration option.
 // Enter the email address that you want to emails to be sent to.
@@ -53,15 +44,14 @@ $address = "help@myabakus.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . '.';
+$e_subject = '' . $name . 'requested a demo.';
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $name from your website, their message is as follows." . PHP_EOL . PHP_EOL;
-$e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
+$e_body = "$name has requested a demo from the website." . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name by email, $email or by phone $phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
@@ -78,8 +68,8 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h2>Email sent successfully</h2>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been sent to us.</p>";
+	echo "<h2>Rquest sent successfully</h2>";
+	echo "<p>Thanks <strong>$name</strong>, we will get in touch you as soon as possible.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
