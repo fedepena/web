@@ -875,3 +875,35 @@ h6 {
     }
     /* ADVISOR y ASESOR fin */
 }
+
+/*Footer*/
+
+footer {
+  background-color: #000000;
+  min-height:374px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+footer .row { margin-top: 18.5px; padding: 0px 50px 0 50px; }
+
+/* Clase para el título cabeza de las columnas del footer */
+.footer-col-heading { font-size:20px; font-weight:700; color:#B8B8B8; margin-bottom: 15px;}
+
+.footer-ul { list-style-type:none;  padding-left:1px; margin-left:2px;}
+
+.footer-ul li { line-height:26px; font-size:14px; background-color: #212121; border: 0.5px solid #000000; padding-left: 12px; }
+
+.footer-ul li a { color:#B8B8B8; transition: color 0.2s linear 0s, background 0.2s linear 0s; text-decoration:none; }
+
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#FFFFFF; text-decoration:none;}
+
+
+@media screen and (max-width: 767px) {
+
+  footer .row { text-align: center; }
+
+  .footer-col-heading { font-size:22px;}
+
+  .footer-ul li { line-height:26px; font-size:16px;}
+
+}
