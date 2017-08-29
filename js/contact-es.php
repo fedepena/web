@@ -13,6 +13,7 @@ $name     = $_POST['name'];
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
 $comments = $_POST['comments'];
+$whatsapp = !empty($_POST['whatsapp']);
 
 if(trim($name) == '') {
 	echo '<div class="error_message">Por favor ingrese su nombre</div>';
@@ -52,6 +53,9 @@ $e_subject = '' . $name . 'ha solicitado un demo.';
 
 $e_body = "$name ha solicitado un demo desde el website." . PHP_EOL . PHP_EOL;
 $e_reply = "Se puede contactar a $name por email, $email o por teléfono $phone";
+if ($whatsapp) {
+	$e_reply .= " y por WhatsApp";
+}
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
