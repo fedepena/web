@@ -1150,6 +1150,7 @@ jQuery(document).ready(function(){
                     email: $('#email').val(),
                     phone: $('#phone').val(),
                     comments: $('#comments').val(),
+                    whatsapp: $('#whatsapp').is(':checked') ? 1 : 0
                 },
                 function(data){
                     document.getElementById('message').innerHTML = data;
@@ -1167,4 +1168,3 @@ jQuery(document).ready(function(){
     });
 
 });
-
