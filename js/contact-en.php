@@ -52,11 +52,12 @@ $e_subject = '' . $name . 'requested a demo.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "$name has requested a demo from the website." . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name by email, $email or by phone $phone";
+$e_body = "$name ($email) has requested a demo from the website." . PHP_EOL . PHP_EOL;
+$e_reply = "He/she can be contacted";
 if ($whatsapp) {
-	$e_reply .= " y por WhatsApp";
+	$e_reply .= " by WhatsApp";
 }
+$e_reply .= " at $phone"
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
